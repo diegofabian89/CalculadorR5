@@ -1,4 +1,4 @@
-from models import data_utils, validation_utils
+from models import data_utils
 from models.ui import menu, welcome
 from classes import Consulta
 
@@ -10,7 +10,7 @@ def main():
 
     consultas = Consulta.Consulta(df)
 
-    menu.menu(user, consultas,df)
+    menu.menu(user, consultas)
 
     consultas.history.to_csv('data/historial.csv', index=False)
 

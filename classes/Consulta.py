@@ -4,6 +4,10 @@ class Consulta:
     def __init__(self, df_history):
         self.history = df_history
 
+    pd.set_option('display.max_columns', None)
+    pd.set_option('display.width', None)
+    pd.set_option('display.max_colwidth', None)
+
     def update_historial(self, new_row):
         self.history = pd.concat([self.history, pd.DataFrame([new_row])], ignore_index=True)
 
@@ -20,6 +24,7 @@ class Consulta:
             print(f"\033[31mNo hay operaciones para el usuario: {user}\033[0m")
             return False
         else:
+
             print(f"\nOperaciones de {user}:")
             print(df)
             total = df['resultado'].sum()

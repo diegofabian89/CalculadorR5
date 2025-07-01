@@ -20,7 +20,7 @@ def operator_request():
     return operator
 
 
-def menu(user, consultas, dframe):
+def menu(user, consultas):
     while True:
         print("\n--- CALCULADORA ---")
         print("1. Calcular")
