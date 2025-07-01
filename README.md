@@ -61,6 +61,12 @@ CalculadorR5/
 - **data/historial.csv**  
   Archivo donde se almacena el historial de operaciones de los usuarios.
 
+## Cómo ejecutar el proyecto
+
+1. Clonar el repositorio  
+   ```bash
+   git clone https://github.com/diegofabian89/CalculadorR5.git
+
 ### Crear y activar el entorno virtual
 
 ```shell
